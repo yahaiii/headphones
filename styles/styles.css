@@ -2,6 +2,7 @@
 
 :root {
     --primary: #FF6565;
+    text-align: center;
 
 }
 
@@ -29,7 +30,8 @@ button {
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0, 2, 0, 0.5);
     border: none;
-    font-weight: 900;
+    font-weight: 600;
+    font-size: 0.5em;
 }
 
 button:hover {
@@ -43,3 +45,35 @@ button:hover {
     font-family: 'Source San Pro';
     src: url('../assets/fonts/SourceSansPro-Regular.otf');
 }
+
+.hero {
+    background-image: url('../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.logo img {
+    width:100px;
+    margin-top: 12px;
+
+}
+
+.navlinks {
+    display: none;;
+}
+
+.banner-content h1 {
+    padding: 75px 7px 0;
+}
+
+.banner-content p {
+    font-size: 0.7em;
+    padding: 5%;
+}
+
+/* #services, #results, #contact {
+    text-align: center;
+} */
