@@ -58,38 +58,14 @@ section {
     color: #f2f2f2;
 }
 
-header {
-    display: flex;
-    padding: 5%;
-    align-items: center;
-}
+.logo img {
+    width:100px;
+    margin-top: 12px;
 
-#menu-toggle {
-    display: none;
 }
-
-.logo {
-    margin: 0 auto;
-}
-
 
 .navlinks {
     display: none;
-}
-
-.navlinks a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#menu-toggle:checked ~ .navlinks {
-    display: flex; /* Show the menu when the checkbox is checked */
-    flex-direction: column;
-    position: absolute;
-    font-weight: 900;
-    top: 80px;
-    left: 0;
-    width: 100%;
 }
 
 .banner-content h1 {
@@ -154,37 +130,9 @@ footer img {
 
 /* responsive styles */
 
+
 /* tablet */
 @media screen and (min-width: 480px) {
-    body {
-        font-size: 1.2em;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-around;
-    }
-    .navlinks {
-        display: inline;
-
-    }
-
-    .navlinks li {
-        display: inline;
-    }
-
-    .navlinks ul a {
-        color: white;
-        text-align: center;
-        padding: 6px 8px;
-        text-decoration: none;
-        font-size: 1em;
-      }
-    
     .numbers, .service-item-container{
         display: grid;
         grid-template-columns: 6fr 6fr;
@@ -203,66 +151,17 @@ footer img {
     button {
         font-size: 1em;
     }
-
-    footer {
-        padding: 5%;
-    }
-
-    footer p {
-        font-size: 1.2em;
-    }
-
-    .footer-logo img {
-        width: 25%;
-        padding: 0;
-    }
-
-    .socials img {
-        width: 15%;
-        padding: 0;
-    }
-
-    #contact form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    
-    #contact input {
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: rgb(196, 196, 196);
-        margin: 35px;
-        
-    }
-
-    #contact button.cta {
-        width: 40%;
-        margin: 0 auto;
-    }
-
-    
-
-
 }
 
 /* desktop */
 @media screen and (min-width: 1000px) {
-    body {
-        font-size: 1.6em;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
     header {
         display: flex;
         justify-content: space-around;
     }
     .navlinks {
         display: inline;
+        margin-top: 16px;
 
     }
 
@@ -290,47 +189,5 @@ footer img {
     }
     button {
         font-size: 1.4em;
-    }
-
-    footer {
-        padding: 5%;
-    }
-
-    footer p {
-        font-size: 1.2em;
-    }
-
-    .footer-logo img {
-        width: 25%;
-        padding: 0;
-    }
-
-    .socials img {
-        width: 15%;
-        padding: 0;
-    }
-
-    #contact {
-        margin-bottom: 0;
-    }
-
-    #contact form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    
-    #contact input {
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: rgb(196, 196, 196);
-        margin: 35px;
-        
-    }
-
-    #contact button.cta {
-        width: 40%;
-        margin: 0 auto;
     }
 }

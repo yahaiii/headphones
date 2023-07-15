@@ -1,0 +1,175 @@
+/* variables */
+
+:root {
+    --primary: #FF6565;
+}
+
+/* reset */
+
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;    
+}
+
+/* base styles */
+
+body {
+    font-family: 'Source San Pro';
+    overflow-x: hidden;
+}
+
+button {
+    background: var(--primary);
+    border-radius: 20px;
+    color: #f2f2f2;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 2, 0, 0.5);
+    border: none;
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
+button:hover {
+    opacity: 0.9;
+    color: rgb(63, 63, 63);
+    box-shadow: none;
+
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Source San Pro';
+    src: url('../assets/fonts/SourceSansPro-Regular.otf');
+}
+
+section {
+    padding: 10%;
+}
+
+.hero {
+    background-image: url('../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+
+.navlinks {
+    display: none;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu-toggle:checked ~ .navlinks {
+    display: flex; /* Show the menu when the checkbox is checked */
+    flex-direction: column;
+    position: absolute;
+    font-weight: 900;
+    top: 80px;
+    left: 0;
+    width: 100%;
+}
+
+.banner-content h1 {
+    padding: 75px 7px 0;
+}
+
+.banner-content p, #services p {
+    font-size: 0.7em;
+    padding: 5%;
+}
+
+
+/* responsive styles */
+
+/* tablet */
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navlinks {
+        display: inline;
+
+    }
+
+    .navlinks li {
+        display: inline;
+    }
+
+    .navlinks ul a {
+        color: white;
+        text-align: center;
+        padding: 6px 8px;
+        text-decoration: none;
+        font-size: 1em;
+      }
+    
+    
+    
+
+
+}
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 1.6em;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navlinks {
+        display: inline;
+
+    }
+
+    .navlinks li {
+        display: inline;
+    }
+
+    .navlinks ul a {
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+  
+}
