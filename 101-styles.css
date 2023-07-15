@@ -111,6 +111,10 @@ header {
     margin: 5%;
 }
 
+.service-item:hover {
+    transform: scale(1.1);
+  }
+
 
 #results {
     background-image: url('../assets/images/background-results.png');
@@ -121,10 +125,73 @@ header {
     padding: 7%;
 }
 
-.numbers img {
+/* .numbers img {
     width: 60%;
     margin: 5%;
-}
+} */
+
+.numbers .pentagon {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: var(--primary);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pentagon:hover {
+    transform: scale(1.1);
+  }
+  
+  .text {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: text-animation 1.5s infinite ease-in-out alternate;
+  }
+  
+  .lorem {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0;
+    animation: lorem-animation 1.5s infinite ease-in-out alternate;
+  }
+  
+  @keyframes text-animation {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(180deg);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes lorem-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
 
 #contact form {
     padding: 5%;

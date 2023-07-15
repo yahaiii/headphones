@@ -121,10 +121,35 @@ header {
     padding: 7%;
 }
 
-.numbers img {
+/* .numbers img {
     width: 60%;
     margin: 5%;
-}
+} */
+
+.numbers .pentagon {
+    width: 200px;
+    height: 200px;
+    margin: 5%;
+    position: relative;
+    background-color: var(--primary);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .lorem {
+    font-size: 18px;
+    color: #fff;
+  }
+  
 
 #contact form {
     padding: 5%;
